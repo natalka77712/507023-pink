@@ -6,7 +6,9 @@
 </head>
 <body>
 <header class="page-header">
-  <a href="index.html" class="page-header__logo">PINK</a>
+  <a href="#" class="page-header__logo">
+    <svg class="page-header__logo" width="75" height="22"></svg>
+  </a>
   <button type="button" class="page-header__button" aria-label="Открыть меню"></button>
 <nav class="main-nav">
   <ul class="main-nav__list">
@@ -19,11 +21,9 @@
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Приложение для телефонов Pink - жизнь в розовом цвете</h1>
-  <div class="page-picture">
-    <img class="page-picture__image" src="http://placehold.it/320x396" alt="Изображение приложения" width="320" height="396">
-  </div>
 
   <section class="download">
+    <img class="download__image" src="http://placehold.it/320x396" alt="Изображение приложения" width="320" height="396">
     <a href="#" class="download__button button">Скачать приложение</a>
     <ul class="download__list">
       <li class="download__item"><a class="download__link--apple" href="#"></a></li>
@@ -95,18 +95,10 @@
   <section class="contacts">
     <h2 class="visually-hidden">Контакты для связи</h2>
     <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
-      <div class="contacts__item">
-        <b class="contacts__way">Звоните:</b>
-        <p class="contacts__type">+7 (812) 555-66-66</p>
-      </div>
-      <div class="contacts__item">
-        <b class="contacts__way">Пишите:</b>
-        <p class="contacts__type">mail@htmlacademy.ru</p>
-      </div>
-      <div class="contacts__item">
-        <b class="contacts__way">Приезжайте в гости:</b>
-        <p class="contacts__type">ул. БольшаяКонюшенная, 19/8</p>
-      </div>
+      <p class="contacts__item">Звоните: +7 (812) 555-66-66</p>
+      <p class="contacts__item">Пишите: mail@htmlacademy.ru</p>
+      <p class="contacts__item">Приезжайте в гости: ул. БольшаяКонюшенная, 19/8</p>
+
     <div class="contacts__map"></div>
   </section>
 </main>
