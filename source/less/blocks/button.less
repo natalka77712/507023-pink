@@ -1,0 +1,44 @@
+.button {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button--main {
+  display: inline-block;
+  vertical-align: middle;
+  width: 280px;
+  padding: 18px 0;
+  border-radius: 26px;
+  border-width: 3px;
+  border-style: solid;
+  .mixin-font(18px; 18px; 700);
+  border: 3px solid @white;
+}
+
+button--submit {
+  display: inline-block;
+  .mixin-font(18px; 30px; 700);
+  color: @white;
+  padding: 25px 0;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: @green;
+  box-sizing: border-box;
+}
+
+.button--active {
+  border: 3px solid @pink;
+  color: @pink;
+  margin-bottom: 12px;
+}
+
+.button--disabled {
+  color: @gray-dark;
+  border-color: @gray-dark;
+  margin-bottom: 41px;
+}
