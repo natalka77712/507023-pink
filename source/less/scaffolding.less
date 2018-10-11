@@ -1,5 +1,10 @@
 body {
-  font-family: @main-font;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 img {
@@ -7,7 +12,11 @@ img {
 }
 
 a {
+
+  &:hover,
+  &:focus {
   text-decoration: none;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -23,4 +32,9 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.main-wrapper {
+  width: width: 280px;
+  margin: 0 auto;
 }

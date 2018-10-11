@@ -1,18 +1,23 @@
+.gallery {
+  background-color: @white;
+}
+
 .galery__intro {
-  font-size: 14px;
-  line-height: 30px;
+  .mixin-font(14px; 30px; 400);
   text-align: center;
   margin-bottom: 50px;
 }
 
-.gallery-post {
+.gallery__image,
+.panoram-card {
   background-color: @gray;
   margin: 0;
   margin-bottom: 20px;
+  paddig: 25px 0 26px 18px;
 }
 
 .gallery__img--panoram {
-  width: 100%;
+  width: 320px;
 }
 
 .gallery__description {
@@ -20,22 +25,16 @@
 }
 
 .gallery__name {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700p;
+  .mixin-font(14px; 24px; 700);
 }
 
 .gallery__time {
   text-transform: uppercase;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 300;
+  .mixin-font(12px; 24px; 300);
 }
 
 .gallery__note {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400px;
+  .mixin-font(14px; 24px; 400);
   padding-top: 5px;
   padding-bottom: 10px;
 }
@@ -43,5 +42,4 @@
 .gallery__like {
   color: @pink;
   text-transform: uppercase;
-  padding-bottom: 22px;
 }

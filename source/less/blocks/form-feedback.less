@@ -1,16 +1,20 @@
 .form-feedback__label {
-  .form-font-pink();
+  .mixin-font(14px; 30px; 400);
+  .color: @pink;
   padding-left: 23px;
-  pading-bottom: 7px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .form-feedback__input {
-  .form-font-blue();
+  .mixin-font(18px; 30px; 400);
+  .color: @blue;
   border: 2px solid @light-gray;
   border-radius: 3px;
   box-sizing: border-box;
   width: 276px;
-  padding: 22px;
+  padding: 20px 7px 20px 20px;
+  margin-top: 15px;
   margin-bottom: 20px;
 }
 

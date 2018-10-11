@@ -1,10 +1,13 @@
 .form-emotion {
-  padding-bottom: 18px;
-  font-size: 14px;
-  line-height: 18px;
+  background-color: @white;
+}
+
+.form-emotion__title {
+  .mixin-font(14px; 18px; 400);
   text-transform: uppercase;
   color: @pink;
   text-align: center;
+  padding: 10px 14px;
 }
 
 form-emotion__textarea {
@@ -16,10 +19,13 @@ form-emotion__textarea {
 }
 
 form-emotion__required {
-  font-sixe: 14px;
-  line-height: 30px;
-  font-weight: 400px;
+  .mixin-font(18px; 30px; 400);
   color: @blue;
   text-align: center;
-  margin-bottom: 57px;
+  margin-top: 40px;
+  padding-left: 46px;
+  border: 2px solid @gray-light;
+  width: 100%;
+  box-sizing: border-box;
+  text-transform: uppercase;
 }

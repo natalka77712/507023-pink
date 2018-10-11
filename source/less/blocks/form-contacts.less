@@ -1,18 +1,24 @@
 .form-contacts {
   margin-bottom: 42px;
+  background-color: @white;
 
 .form-contacts__label {
-  padding-left: 23px;
-  pading-bottom: 7px;
-  .form-font-pink();
+  .mixin-font(14px; 30px; 400);
+  .color: @pink;
+  padding: 0 30px 0 22px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+
 }
 
 .form-contacts__input {
-  .form-font-blue();
+  .mixin-font(18px; 30px; 400);
+  .color: @blue;
   border: 2px solid @light-gray;
   border-radius: 3px;
   box-sizing: border-box;
-  width: 276px;
-  padding: 22px;
+  width: 100%;
+  padding: 20px 7px 20px 20px;
   margin-bottom: 20px;
+  margin-top: 15px;
 }
