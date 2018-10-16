@@ -1,10 +1,15 @@
-.form-achievement {
+.form-achievement.wrapper {
   background-color: @gray;
+  margin-bottom: 30px;
+}
+
+.form-achievement {
   margin-bottom: 40px;
 }
 
 .form-achievement__title {
-  .mixin-font(14px; 18px; 400);
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   color: @pink;
   text-align: center;
@@ -16,12 +21,12 @@
   .reset-list();
 }
 
-form-achievement__label {
-  .mixin-font(18px; 30px; 400);
+.form-achievement__label {
+  font-size: 18px;
+  line-height: 30px;
   color: @blue;
   display: block;
   position: relative;
-  display: block;
   cursor: pointer;
   padding-left: 70px;
   margin-bottom: 56px;
@@ -29,16 +34,19 @@ form-achievement__label {
   &::before {
     content: "";
     position: absolute;
-    top: -7px;
+    top: -4px;
     left: 0;
     width: 35px;
     height: 35px;
     background-color: @white;
-    border: 2px solid @light-gray;
+    border: 2px solid @gray-light;
     background-image: url("../img/icon-yes.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
-
 }
-//Как обозначить отмеченный чекбокс?//
+
+.form-achievement__item:last-child {
+  padding-bottom: 5px;
+}
+

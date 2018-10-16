@@ -1,14 +1,17 @@
-.page=header {
+.page-header {
   background-color: @blue;
   border-bottom: 1px solid @color-nav-dark;
 }
 
-page-header__logo {
+.page-header__logo {
   margin-top: 22px;
   margin-bottom: 25px;
 }
 
-page-header__button {
+.page-header__button {
+  position: relative;
+  top: -30px;
+  left: 155px;
   width: 24px;
   height: 24px;
   font-size: 0;
@@ -16,4 +19,16 @@ page-header__button {
   margin-top: 21px;
   background-image: url("../img/icon-menu-cross.svg");
   background-color: transparent;
+}
+
+.page-header__button-photo {
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icon-menu-burger.svg");
+  width: 50px;
+  height: 24px;
+  position: relative;
+  top: -30px;
+  left: 130px;
 }

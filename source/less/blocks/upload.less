@@ -1,13 +1,17 @@
 .upload__wrapper {
-  padding: 46px 14px 46px 10px;
+  padding: 22px 14px 42px 10px;
+  text-align: center;
 }
 
 .upload__slogan {
-  .mixin-font(18px; 30px; 400);
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
 }
 
 .upload__img {
   background-color: @gray;
+  text-align: center;
 }
 
 .upload__photo {
@@ -19,17 +23,19 @@
   padding-top: 40px;
   padding-bottom: 34px;
   border-bottom: 1px solid @gray-dark;
-  margin-bottom: 39px;
 }
 
 .upload__buttons {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
   line-height: 18px;
-  font: inherit;
-  text-align: center;
   padding: 19px 0;
-  vertical-align: middle;
   background-color: @gray;
-  border-radius: 27px;
   box-sizing: border-box;
+  font: inherit;
+  font-size: 18px;
+  line-height: 18px;
 }

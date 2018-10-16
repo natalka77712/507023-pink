@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -8,33 +7,22 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
-a {
-
-  &:hover,
-  &:focus {
-  text-decoration: none;
-  }
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .main-wrapper {
-  width: width: 280px;
+  width: 280px;
   margin: 0 auto;
 }

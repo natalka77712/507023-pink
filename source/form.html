@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="main-wrapper">
@@ -39,6 +40,7 @@
       </fieldset>
 
       <fieldset class="form__block form-achievement">
+      <div class="form-achievement wrapper">
       <legend class="form-achievement__title">Ваши безбашенные достижения в путешествии</legend>
         <ul class="form-achievement__list">
           <li class="form-achievement__item">
@@ -66,6 +68,7 @@
             <label class="form-achievement__label" for="hotel-filter">Разгромил отель</label>
           </li>
         </ul>
+      </div>
       </fieldset>
 
       <fieldset class="form__block form-contacts">
@@ -77,6 +80,7 @@
       </fieldset>
 
       <fieldset class="form__block form-app">
+      <div class="form-app wrapper">
       <legend class="form-app__title">С каким приложением вы путешествовали?</legend>
         <ul class="form-app__list">
           <li class="form-app__item">
@@ -92,11 +96,12 @@
             <label class="form-app__label" for="windows">Windows Phone</label>
           </li>
         </ul>
+      </div>
       </fieldset>
 
       <fieldset class="form__block form-emotion">
       <legend class="form-emotion__title">Опишите свои эмоции</legend>
-        <textarea class="form-emotion__textarea" name="user-emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <textarea class="form-emotion__textarea" name="user-emotions" cols="31" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
 
       <button class="form__button button--submit" type="submit">Отправить форму</button>

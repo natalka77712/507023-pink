@@ -17,29 +17,41 @@
   border-radius: 26px;
   border-width: 3px;
   border-style: solid;
-  .mixin-font(18px; 18px; 700);
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
   border: 3px solid @white;
 }
 
-button--submit {
+.button--submit {
   display: inline-block;
-  .mixin-font(18px; 30px; 700);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700px;
   color: @white;
   padding: 25px 0;
   vertical-align: middle;
   text-transform: uppercase;
   background-color: @green;
   box-sizing: border-box;
+  width: 280px;
+  border-radius: 3px;
+  border: 0;
 }
 
 .button--active {
   border: 3px solid @pink;
   color: @pink;
   margin-bottom: 12px;
+  width: 280px;
+  border-radius: 27px;
+  margin-top: 20px;
 }
 
 .button--disabled {
   color: @gray-dark;
   border-color: @gray-dark;
   margin-bottom: 41px;
+  width: 280px;
+  border-radius: 27px;
 }

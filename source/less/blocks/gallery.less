@@ -3,17 +3,17 @@
 }
 
 .galery__intro {
-  .mixin-font(14px; 30px; 400);
+  font-size: 14px;
+  line-height: 30px;
   text-align: center;
   margin-bottom: 50px;
 }
 
 .gallery__image,
-.panoram-card {
+.gallery__panoram-card {
   background-color: @gray;
   margin: 0;
   margin-bottom: 20px;
-  paddig: 25px 0 26px 18px;
 }
 
 .gallery__img--panoram {
@@ -22,24 +22,26 @@
 
 .gallery__description {
   background-color: @gray;
+  padding: 20px;
 }
 
 .gallery__name {
-  .mixin-font(14px; 24px; 700);
+  font-weight: 700;
 }
 
 .gallery__time {
   text-transform: uppercase;
-  .mixin-font(12px; 24px; 300);
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .gallery__note {
-  .mixin-font(14px; 24px; 400);
-  padding-top: 5px;
   padding-bottom: 10px;
+  margin: 0;
 }
 
 .gallery__like {
   color: @pink;
   text-transform: uppercase;
+  text-decoration: none;
 }

@@ -3,29 +3,37 @@
 }
 
 .form-emotion__title {
-  .mixin-font(14px; 18px; 400);
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   color: @pink;
   text-align: center;
-  padding: 10px 14px;
+  padding: 30px 0px 10px 0px;
 }
 
-form-emotion__textarea {
+.form-emotion__textarea {
   width: 276px;
-  .form-font-blue();
+  color: @blue;
   padding: 20px;
-  border: 2px solid @light-gray;
+  border: 2px solid @gray-light;
   margin-bottom: 48px;
+  font-size: 14px;
+  line-height: 30px;
+  font: inherit;
 }
 
-form-emotion__required {
-  .mixin-font(18px; 30px; 400);
+.form-emotion__required {
+  font-size: 18px;
+  line-height: 30px;
   color: @blue;
   text-align: center;
   margin-top: 40px;
   padding-left: 46px;
-  border: 2px solid @gray-light;
   width: 100%;
   box-sizing: border-box;
   text-transform: uppercase;
+}
+
+.form-emotion__symbol{
+  color: @pink;
 }
