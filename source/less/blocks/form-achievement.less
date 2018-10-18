@@ -1,0 +1,51 @@
+.form-achievement.wrapper {
+  background-color: @gray;
+  margin-bottom: 30px;
+}
+
+.form-achievement {
+  margin-bottom: 40px;
+}
+
+.form-achievement__title {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @pink;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form-achievement__list {
+  .reset-list();
+}
+
+.form-achievement__label {
+  font-size: 18px;
+  line-height: 30px;
+  color: @blue;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 70px;
+  margin-bottom: 56px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-color: @white;
+    border: 2px solid @gray-light;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.form-achievement__item:last-child {
+  padding-bottom: 5px;
+}

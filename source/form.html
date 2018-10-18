@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+<div class="main-wrapper">
 <header class="page-header">
   <a href="index.html" class="page-header__logo">
     <svg class="page-header__logo" width="75" height="22"></svg>
@@ -38,33 +40,35 @@
       </fieldset>
 
       <fieldset class="form__block form-achievement">
+      <div class="form-achievement wrapper">
       <legend class="form-achievement__title">Ваши безбашенные достижения в путешествии</legend>
         <ul class="form-achievement__list">
           <li class="form-achievement__item">
             <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="selfie" id="selfie-filter" checked>
-            <label for="selfie-filter">Сделал селфи с акулой</label>
+            <label class="form-achievement__label" for="selfie-filter">Сделал селфи с акулой</label>
           </li>
           <li class="form-achievement__item">
             <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="sunbath" id="sunbath-filter" checked>
-            <label for="sunbath-filter">Обгорел на пляже</label>
+            <label class="form-achievement__label" for="sunbath-filter">Обгорел на пляже</label>
           </li>
           <li class="form-achievement__item">
             <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="chack" id="chack-filter">
-            <label for="chack-filter">Видел Чака Норриса</label>
+            <label class="form-achievement__label" for="chack-filter">Видел Чака Норриса</label>
           </li>
           <li class="form-achievement__item">
             <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="souvenirs" id="souvenirs-filter">
-            <label for="souvenirs-filter">Накупил сувениров</label>
+            <label class="form-achievement__label" for="souvenirs-filter">Накупил сувениров</label>
           </li>
           <li class="form-achievement__item">
             <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="tower" id="tower-filter" checked>
-            <label for="tower-filter">Удержал башню</label>
+            <label class="form-achievement__label" for="tower-filter">Удержал башню</label>
           </li>
           <li class="form-achievement__item">
             <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="hotel" id="hotel-filter">
-            <label for="hotel-filter">Разгромил отель</label>
+            <label class="form-achievement__label" for="hotel-filter">Разгромил отель</label>
           </li>
         </ul>
+      </div>
       </fieldset>
 
       <fieldset class="form__block form-contacts">
@@ -76,29 +80,31 @@
       </fieldset>
 
       <fieldset class="form__block form-app">
+      <div class="form-app wrapper">
       <legend class="form-app__title">С каким приложением вы путешествовали?</legend>
         <ul class="form-app__list">
           <li class="form-app__item">
             <input class="form-app__radio visually-hidden" type="radio" name="app-type" value ="ios" id="ios" checked>
-            <label for="ios">Pink для iOS</label>
+            <label class="form-app__label" for="ios">Pink для iOS</label>
           </li>
           <li class="form-app__item">
             <input class="form-app__radio visually-hidden" type="radio" name="app-type" value ="android" id="android">
-            <label for="android">Pink на Android</label>
+            <label class="form-app__label" for="android">Pink на Android</label>
           </li>
           <li class="form-app__item">
             <input class="form-app__radio visually-hidden" type="radio" name="app-type" value ="windows" id="windows">
-            <label for="windows">Windows Phone</label>
+            <label class="form-app__label" for="windows">Windows Phone</label>
           </li>
         </ul>
+      </div>
       </fieldset>
 
       <fieldset class="form__block form-emotion">
       <legend class="form-emotion__title">Опишите свои эмоции</legend>
-        <textarea class="form-emotion__textarea" name="user-emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <textarea class="form-emotion__textarea" name="user-emotions" cols="31" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
 
-      <button class="form__button button" type="submit">Отправить форму</button>
+      <button class="form__button button--submit" type="submit">Отправить форму</button>
 
     </form>
 
@@ -129,5 +135,6 @@
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg></svg></a>
     </p>
   </footer>
+</div>
 </body>
 </html>

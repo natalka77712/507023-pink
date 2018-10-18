@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+<div class="main-wrapper">
 <header class="page-header">
   <a href="#" class="page-header__logo">
     <svg class="page-header__logo" width="75" height="22"></svg>
@@ -22,9 +24,9 @@
 <main class="page-main">
   <h1 class="visually-hidden">Приложение для телефонов Pink - жизнь в розовом цвете</h1>
 
-  <section class="download">
+  <section class="download download--index">
     <img class="download__image" src="http://placehold.it/320x396" alt="Изображение приложения" width="320" height="396">
-    <a href="#" class="download__button button">Скачать приложение</a>
+    <a href="#" class="download__button button--main">Скачать приложение</a>
     <ul class="download__list">
       <li class="download__item"><a class="download__link--apple" href="#"></a></li>
       <li class="download__item"><a class="download__link--android" href="#"></a></li>
@@ -44,7 +46,7 @@
       </li>
       <li class="advantages__item">
         <b class="advantages__title">Меняет мир вокруг</b>
-        <p class="advantages__list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
       </li>
       <li class="advantages__item">
         <b class="advantages__title">Заводит новых друзей</b>
@@ -68,9 +70,9 @@
   <section class="subscription">
     <h2 class="visually-hidden">Подписки</h2>
     <table class="subscription__table">
-      <tr class="subscription__item">
-        <th class="subscription__name">Стандарт</th>
-        <th class="subscription__cost">3,99 USD</th>
+      <tr class="subscription__item row--blue">
+        <th class="subscription__name">Стандарт
+        <span class="subscription__cost">3,99 USD</span></th>
       </tr>
       <tr class="subscription__item">
         <td class="subscription__description">Розовый фильтр</td>
@@ -95,12 +97,13 @@
   <section class="contacts">
     <h2 class="visually-hidden">Контакты для связи</h2>
     <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
-    <p class="contacts__item">Звоните: +7 (812) 555-66-66</p>
-    <p class="contacts__item">Пишите: mail@htmlacademy.ru</p>
-    <p class="contacts__item">Приезжайте в гости: ул. Большая Конюшенная, 19/8</p>
+    <p class="contacts__item">Звоните:<span class="contacts__id">+7 (812) 555-66-66</span></p>
+    <p class="contacts__item">Пишите:<span class="contacts__id">mail@htmlacademy.ru</span></p>
+    <p class="contacts__item">Приезжайте в гости:<span class="contacts__id">ул. Большая Конюшенная, 19/8</span></p>
 
     <div class="contacts__map"></div>
   </section>
 </main>
+</div>
 </body>
 </html>
