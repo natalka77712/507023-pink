@@ -28,3 +28,47 @@
 .form-app__item:last-child {
   padding-bottom: 1px;
 }
+
+@media (min-width: @tablet-width) {
+  .form-app {
+    order: 1;
+  }
+
+  .form-app.wrapper {
+    margin-top: 10px;
+    background-color: @white;
+  }
+
+  .form__block.form-app {
+    border: 2px solid @gray-light;
+    padding: 33px 115px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+  }
+
+  .form-app__title {
+    padding: 0 14px;
+  }
+
+  .form-app__label {
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-app.wrapper {
+    width: 45%;
+    margin-left: auto;
+  }
+
+  .form__block.form-app {
+    padding: 41px 20px 55px;
+    margin: 0;
+    margin-top: -20px;
+    width: 45%;
+  }
+
+  .form-app__title {
+    min-width: 345px;
+  }
+}

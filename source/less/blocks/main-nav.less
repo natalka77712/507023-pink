@@ -1,17 +1,11 @@
 .main-nav {
-  background-color: @blue;
-}
-
-.main-nav__list {
-  .reset-list();
+  display: none;
 }
 
 .main-nav__item {
   text-align: center;
   border-top: 1px solid @color-nav-light;
   border-bottom: 1px solid @color-nav-dark;
-  padding-top: 16px;
-  padding-bottom: 16px;
   box-sizing: border-box;
 }
 
@@ -21,6 +15,34 @@
   font-weight: 700;
   color: @white;
   text-transform: uppercase;
-  padding: 18px 0;
   text-decoration: none;
+}
+
+.main-nav__list {
+  .reset-list();
+  width: 660px;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    margin-left: auto;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    border: none;
+  }
+
+  .main-nav__link {
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: capitalize;
+    padding: 0 35px;
+  }
 }

@@ -2,85 +2,113 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="main-wrapper">
-<header class="page-header">
-  <a href="index.html" class="page-header__logo">
-    <svg class="page-header__logo" width="75" height="22"></svg>
-  </a>
-  <button type="button" class="page-header__button" aria-label="Открыть меню"></button>
-<nav class="main-nav">
-  <ul class="main-nav__list">
-    <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-    <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-    <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-    <li class="main-nav__item"><a class="main-nav__link" href="#">HTML ACADEMY</a></li>
-  </ul>
-</nav>
-</header>
-<main class="page-form">
+<header class="page-header page-header-main form--header">
+  <div class="page-header__wrapper">
+    <div class="page-header__top container">
+      <div class="page-header__logo-link">
+        <a class="page-header__logo" href="index.html"></a>
+        <button type="button" class="page-header__button" aria-label="Открыть меню"></button>
+      </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="page-form">
   <h1 class="page-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-
+</div>
+</header>
+<main>
   <section class="form">
     <h2 class="visually-hidden">Форма для конкурса</h2>
-    <p class="form__suggestion">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-    <form class="form__body" name="form" method="post" action="https://echo.htmlacademy.ru">
-
-      <fieldset class="form__block form-feedback">
+    <div class="form__wrapper container">
+      <p class="form__suggestion">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span class="form__adittion">Пожалуйста, заполните форну ниже:</span>
+      </p>
+    </div>
+      <form class="form__body" name="form" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="form__block form-feedback container">
       <legend class="visually-hidden">Данные участника</legend>
+      <div class="form-feedback__group">
         <label for="last-name" class="form-feedback__label">Фамилия</label>
         <input type="text" class="form-feedback__input" id="last-name" name="last-name" placeholder="Укажите фамилию *">
+      </div>
+      <div class="form-feedback__group">
         <label for="name" class="form-feedback__label">Имя</label>
         <input type="text" class="form-feedback__input" id="name" name="name" placeholder="Введите ваше имя *">
+      </div>
+      <div class="form-feedback__group">
         <label for="middle-name" class="form-feedback__label">Отчество</label>
         <input type="text" class="form-feedback__input" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
-      </fieldset>
-
-      <fieldset class="form__block form-achievement">
-      <div class="form-achievement wrapper">
-      <legend class="form-achievement__title">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="form-achievement__list">
-          <li class="form-achievement__item">
-            <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="selfie" id="selfie-filter" checked>
-            <label class="form-achievement__label" for="selfie-filter">Сделал селфи с акулой</label>
-          </li>
-          <li class="form-achievement__item">
-            <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="sunbath" id="sunbath-filter" checked>
-            <label class="form-achievement__label" for="sunbath-filter">Обгорел на пляже</label>
-          </li>
-          <li class="form-achievement__item">
-            <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="chack" id="chack-filter">
-            <label class="form-achievement__label" for="chack-filter">Видел Чака Норриса</label>
-          </li>
-          <li class="form-achievement__item">
-            <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="souvenirs" id="souvenirs-filter">
-            <label class="form-achievement__label" for="souvenirs-filter">Накупил сувениров</label>
-          </li>
-          <li class="form-achievement__item">
-            <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="tower" id="tower-filter" checked>
-            <label class="form-achievement__label" for="tower-filter">Удержал башню</label>
-          </li>
-          <li class="form-achievement__item">
-            <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="hotel" id="hotel-filter">
-            <label class="form-achievement__label" for="hotel-filter">Разгромил отель</label>
-          </li>
-        </ul>
       </div>
       </fieldset>
 
-      <fieldset class="form__block form-contacts">
-      <legend class="visually-hidden">Контактные данные</legend>
-        <label for="phone" class="form-contacts__label">Номер телефона</label>
-        <input type="text" class="form-contacts__input" id="phone" name="last-name" placeholder="Номер, пожалуйста">
-        <label for="email" class="form-contacts__label">Адрес почты</label>
-        <input type="text" class="form-contacts__input" id="email" name="name" placeholder="Введите почту *">
+
+      <div class="form-achievement wrapper">
+      <fieldset class="form__block form-achievement container">
+      <legend class="form-achievement__title">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="form-achievement__list">
+          <div class="form-achievement__column">
+            <li class="form-achievement__item">
+              <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="selfie" id="selfie-filter" checked>
+              <label class="form-achievement__label" for="selfie-filter">Сделал селфи с акулой</label>
+            </li>
+            <li class="form-achievement__item">
+              <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="sunbath" id="sunbath-filter" checked>
+              <label class="form-achievement__label" for="sunbath-filter">Обгорел на пляже</label>
+            </li>
+          </div>
+          <div class="form-achievement__column">
+            <li class="form-achievement__item">
+              <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="chack" id="chack-filter">
+              <label class="form-achievement__label" for="chack-filter">Видел Чака Норриса</label>
+            </li>
+            <li class="form-achievement__item">
+              <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="souvenirs" id="souvenirs-filter">
+            <label class="form-achievement__label" for="souvenirs-filter">Накупил сувениров</label>
+            </li>
+          </div>
+          <div class="form-achievement__column">
+            <li class="form-achievement__item">
+              <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="tower" id="tower-filter" checked>
+              <label class="form-achievement__label" for="tower-filter">Удержал башню</label>
+            </li>
+            <li class="form-achievement__item">
+              <input class="form-achievement__checkbox visually-hidden" type="checkbox" name="hotel" id="hotel-filter">
+              <label class="form-achievement__label" for="hotel-filter">Разгромил отель</label>
+            </li>
+          </div>
+        </ul>
+      </fieldset>
+      </div>
+
+      <fieldset class="form__block form-contacts container">
+      <legend class="form-contacts__title">Контактная информация</legend>
+      <div class="form-contacts__wrapper">
+        <div class="form-contacts__column">
+          <label for="phone" class="form-contacts__label">Номер телефона</label>
+          <input type="text" class="form-contacts__input" id="phone" name="last-name" placeholder="Номер, пожалуйста">
+        </div>
+        <div class="form-contacts__column">
+          <label for="email" class="form-contacts__label">Адрес почты</label>
+          <input type="text" class="form-contacts__input" id="email" name="name" placeholder="Введите почту *">
+        </div>
+      </div>
       </fieldset>
 
-      <fieldset class="form__block form-app">
       <div class="form-app wrapper">
+      <fieldset class="form__block form-app container">
       <legend class="form-app__title">С каким приложением вы путешествовали?</legend>
         <ul class="form-app__list">
           <li class="form-app__item">
@@ -96,24 +124,23 @@
             <label class="form-app__label" for="windows">Windows Phone</label>
           </li>
         </ul>
+      </fieldset>
       </div>
-      </fieldset>
 
-      <fieldset class="form__block form-emotion">
+      <fieldset class="form__block form-emotion container">
       <legend class="form-emotion__title">Опишите свои эмоции</legend>
-        <textarea class="form-emotion__textarea" name="user-emotions" cols="31" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <textarea class="form-emotion__textarea" name="user-emotions" cols="24" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
-
-      <button class="form__button button--submit" type="submit">Отправить форму</button>
-
+      <div class="form-emotion button--wrapper container">
+        <button class="form__emotion button--submit" type="submit">Отправить форму</button>
+        <p class="form-emotion__required"><span class="form-emotion__symbol">*</span> – обязательные поля</p>
+        <p class="form-emotion__required desktop"><span class="form-emotion__symbol">*</span> – обязательные для заполнения поля</p>
+      </div>
     </form>
-
-    <p class="form-emotion__required"><span class="form-emotion__symbol">*</span> – обязательные поля</p>
-
   </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer form container">
 
     <a href="index.html" class="page-footer__logo"><svg class="page-footer__logo" width="147" height="40"></svg></a>
 
@@ -132,9 +159,8 @@
     </div>
 
     <p class="page-footer__copyright copyright">Разработано
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg></svg></a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
     </p>
   </footer>
-</div>
 </body>
 </html>

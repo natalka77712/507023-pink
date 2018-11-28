@@ -6,7 +6,24 @@
 }
 
 .reset-form {
-  margin: 0;
   padding: 0;
   border: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 960px;
+    padding: 0 10px;
+  }
 }

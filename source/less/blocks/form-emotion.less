@@ -13,13 +13,14 @@
 }
 
 .form-emotion__textarea {
-  width: 276px;
+  width: 100%;
+  box-sizing: border-box;
   color: @blue;
   padding: 20px;
   border: 2px solid @gray-light;
   margin-bottom: 48px;
   font: inherit;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
 }
 
@@ -29,12 +30,60 @@
   color: @blue;
   text-align: center;
   margin-top: 40px;
-  padding-left: 46px;
-  width: 100%;
   box-sizing: border-box;
   text-transform: uppercase;
 }
 
 .form-emotion__symbol {
   color: @pink;
+}
+
+.form-emotion__required.desktop {
+  display: none;
+}
+
+.button--wrapper.container {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .form__block.form-emotion {
+    order: 4;
+    border: 2px solid @gray-light;
+    padding: 40px 58px 0 58px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+  }
+
+  .button--wrapper.container {
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    padding: 0;
+  }
+
+  .form-emotion__required {
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  .form-emotion__title {
+    padding: 0;
+    padding-top: 10px;
+    min-width: 260px;
+  }
+
+  .form-emotion.button--wrapper {
+    order: 5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-emotion__required {
+    display: none;
+  }
+
+  .form-emotion__required.desktop {
+    display: block;
+  }
 }

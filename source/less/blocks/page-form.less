@@ -1,25 +1,26 @@
-.page-header__button {
-  position: relative;
-  top: -30px;
-  left: 155px;
-  width: 24px;
-  height: 24px;
-  font-size: 0;
-  border: none;
-  margin-top: 21px;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-color: transparent;
+.page-form__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: @white;
+  margin: 0 auto;
+  width: 230px;
+  text-align: center;
+  padding-top: 42px;
 }
 
-.page-form__title {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center -60px;
-  font-size: 24px;
-  font-weight: 300;
-  text-align: center;
-  color: @white;
-  padding-bottom: 59px;
-  padding-top: 40px;
-  margin: 0;
+@media (min-width: @tablet-width) {
+  .page-form__title {
+    margin-top: 70px;
+    width: 500px;
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-form__title {
+    width: 750px;
+  }
 }
