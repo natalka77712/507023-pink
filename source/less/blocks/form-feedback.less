@@ -13,12 +13,32 @@
   border: 2px solid @gray-light;
   border-radius: 3px;
   box-sizing: border-box;
-  width: 276px;
   padding: 16px 7px 16px 20px;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
-.form-feedback__input:last-child {
-  margin-bottom: 42px;
+@media (min-width: @tablet-width) {
+  .form-feedback__group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .form-feedback__label {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  .form-feedback__input {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-feedback {
+    width: 45%;
+  }
 }

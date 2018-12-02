@@ -5,6 +5,7 @@
 
 .form-achievement {
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .form-achievement__title {
@@ -48,4 +49,45 @@
 
 .form-achievement__item:last-child {
   padding-bottom: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-achievement {
+    order: 3;
+  }
+
+  .form__block.form-achievement {
+    border: 2px solid @gray-light;
+    padding: 30px 60px 0;
+    box-sizing: border-box;
+  }
+
+  .form-achievement.wrapper {
+    margin-bottom: 10px;
+    background-color: @white;
+  }
+
+  .form-achievement__title {
+    padding: 0;
+    min-width: 430px;
+  }
+
+  .form-achievement__label {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-achievement__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__block.form-achievement {
+    padding: 45px 60px 0;
+  }
+
+  .form-achievement.wrapper {
+    margin: 0 auto;
+  }
 }
