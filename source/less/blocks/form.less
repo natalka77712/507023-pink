@@ -18,6 +18,20 @@
   display: none;
 }
 
+.form-feedback__input:hover,
+.form-app__label:hover::before,
+.form-contacts__input:hover,
+.form-achievement__label:hover::before {
+  border: 2px solid @black;
+}
+
+.form-feedback__input:active,
+.form-app__label:active::before,
+.form-contacts__input:active,
+.form-achievement__label:active::before {
+  border: 2px solid @red;
+}
+
 @media (min-width: @tablet-width) {
   .form__wrapper {
     font-size: 18px;

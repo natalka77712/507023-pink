@@ -21,8 +21,31 @@
   line-height: 30px;
   color: @blue;
   display: block;
-  padding-left: 70px;
+  padding-left: 30px;
   margin-bottom: 55px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -34px;
+    top: -3px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid @gray-light;
+    border-radius: 50%;
+  }
+}
+
+.form-app__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  background-color: @red;
+  border-radius: 50%;
 }
 
 .form-app__item:last-child {
