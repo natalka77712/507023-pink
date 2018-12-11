@@ -54,6 +54,23 @@
   .form-contacts__column {
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+
+  .form-contacts__icon {
+    width: 64px;
+    height: 64px;
+    background: #e5e5e5;
+    position: absolute;
+    left: 320px;
+    top: 16px;
+  }
+
+  .form__icon--phone,
+  .form__icon--email {
+    left: 22px;
+    bottom: 22px;
+    position: absolute;
   }
 
   .form-contacts__input {
@@ -73,6 +90,10 @@
 
   .form__block.form-contacts {
     padding: 5px 60px;
+  }
+
+  .form-contacts__icon {
+    left: 311px;
   }
 
   .form-contacts__column {
