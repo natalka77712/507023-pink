@@ -70,6 +70,17 @@
   border-bottom: 1px solid @color-nav-dark;
   box-sizing: border-box;
   padding: 18px 0;
+
+  &:hover {
+    color: @red;
+    border-bottom: none;
+  }
+
+  &:active {
+    color: @white;
+    border-bottom: 2px solid @white;
+    padding-bottom: 3px;
+  }
 }
 
 .main-nav__link {
@@ -79,15 +90,6 @@
   color: @white;
   text-transform: uppercase;
   text-decoration: none;
-
-  &:hover {
-    color: @red;
-  }
-
-  &:active {
-    color: @white;
-    opacity: 0.3;
-  }
 }
 
 .main-nav__list {

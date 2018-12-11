@@ -1,6 +1,6 @@
 .subscription__wrapper {
   background-color: @gray;
-  padding: 100px 0 60px;
+  padding: 100px 0 45px;
 }
 
 .subscription__table {
@@ -8,6 +8,7 @@
   background-color: @white;
   border: 2px solid @gray;
   border-collapse: collapse;
+  margin-bottom: 40px;
 }
 
 .cell--empty {
@@ -29,9 +30,19 @@
   min-width: 277px;
 }
 
+.icon--no {
+  fill: @red;
+  display: block;
+  margin: 0 auto;
+}
+
 .cell--active {
   position: relative;
   overflow: hidden;
+}
+
+.subscription__mark:nth-child(3) {
+  display: none;
 }
 
 .subscription__item .subscription__flag {
@@ -102,6 +113,14 @@
 
   .subscription__description:first-child {
     text-transform: capitalize;
+  }
+
+  .subscription__mark:nth-child(3) {
+    display: table-cell;
+  }
+
+  .subscription__toggle {
+    display: none;
   }
 }
 

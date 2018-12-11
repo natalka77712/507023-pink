@@ -10,6 +10,7 @@
   border-radius: 50%;
   border: 3px solid @gray-dark;
   margin-right: 12px;
+  box-sizing: border-box;
 }
 
 .social__link {
@@ -41,11 +42,25 @@
   margin: 0;
 }
 
+.copyright__link {
+  margin-left: 15px;
+  fill: @red;
+
+  &:hover {
+    fill: @black;
+  }
+
+  &:active {
+    fill: @dark-gray;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
     justify-content: space-between;
-    padding: 35px 0;
+    padding: 38px 20px;
   }
 
   .page-footer.form,

@@ -4,6 +4,10 @@
   padding-bottom: 40px;
 }
 
+.reviews__quotes {
+  display: none;
+}
+
 .reviews__author-name {
   display: block;
   text-align: center;
@@ -23,8 +27,38 @@
   line-height: 30px;
   color: @blue;
   margin: 0;
-  padding: 0 20px;
   text-align: center;
+  margin-bottom: 35px;
+}
+
+.reviews__controls,
+.subscription__toggle {
+  text-align: center;
+}
+
+.reviews__controls .reviews__button,
+.subscription__toggle .slider__toggles {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  vertical-align: middle;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: content-box;
+  margin-right: 16px;
+  background: #bec2c7;
+}
+
+.reviews__button.active,
+.slider__toggles.active {
+  background-color: @white;
+  border: 3px solid @black;
+}
+
+.reviews__toggles.buttons {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -55,8 +89,13 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
-    padding-top: 190px;
+    padding-top: 65px;
     padding-bottom: 60px;
+  }
+
+  .reviews__quotes {
+    padding-bottom: 57px;
+    display: block;
   }
 
   .reviews__author-name {
@@ -82,7 +121,38 @@
     margin: 0 auto;
   }
 
-  .reviews__button {
+  .reviews__controls {
     display: none;
+  }
+
+  .reviews__toggles.buttons {
+    position: relative;
+    display: block;
+    opacity: 0.3;
+    outline: none;
+    border: none;
+
+    &:hover {
+      fiil: #868e97;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .reviews__toggles {
+    position: absolute;
+    bottom: 95px;
+    width: 22px;
+    height: 41px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+  }
+
+  .reviews__toggles.next {
+    left: 930px;
   }
 }

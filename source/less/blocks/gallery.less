@@ -29,6 +29,7 @@
   background-color: #f2f2f2;
   padding: 20px;
   box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .gallery__name {
@@ -83,8 +84,27 @@
     height: 300px;
   }
 
-  .gallery__description {
+  .gallery__description--intro {
     flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery__name--intro {
+    order: 1;
+  }
+
+  .gallery__time--intro {
+    order: 2;
+  }
+
+  .gallery__like--intro {
+    order: 3;
+    margin-left: auto;
+  }
+
+  .gallery__note--intro {
+    order: 4;
   }
 }
 

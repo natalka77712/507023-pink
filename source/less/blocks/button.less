@@ -51,17 +51,54 @@
   background-color: @gray-light;
 }
 
+.upload__buttons {
+  display: block;
+  width: 280px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font: inherit;
+  line-height: 18px;
+  padding: 19px 0;
+  background-color: @gray;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+}
+
 .button--active {
-  border: 3px solid @pink;
-  color: @pink;
+  border: 3px solid @red;
+  color: @red;
   margin-bottom: 12px;
   border-radius: 27px;
   margin-top: 20px;
+
+  &:hover {
+    color: @white;
+    background-color: @red;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @red;
+  }
 }
 
 .button--disabled {
-  color: @gray-dark;
-  border-color: @gray-dark;
+  color: rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 27px;
-  opacity: 0.6;
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @dark-gray;
+    border-color: transparent;
+  }
 }
