@@ -3,10 +3,15 @@
   margin-top: 20px;
 }
 
+.form__block.form-app {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .form-app__title {
   padding: 32px 14px;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 18px;
   text-transform: uppercase;
   color: @pink;
   text-align: center;
@@ -14,6 +19,7 @@
 
 .form-app__list {
   .reset-list ();
+  text-align: center;
 }
 
 .form-app__label {
@@ -21,14 +27,13 @@
   line-height: 30px;
   color: @blue;
   display: block;
-  padding-left: 30px;
   margin-bottom: 55px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    left: -34px;
+    left: 5px;
     top: -3px;
     width: 30px;
     height: 30px;
@@ -41,7 +46,7 @@
   content: "";
   position: absolute;
   top: 6px;
-  left: -25px;
+  left: 14px;
   width: 15px;
   height: 15px;
   background-color: @red;
@@ -55,6 +60,7 @@
 @media (min-width: @tablet-width) {
   .form-app {
     order: 1;
+    width: 660px;
   }
 
   .form-app.wrapper {
@@ -64,9 +70,10 @@
 
   .form__block.form-app {
     border: 2px solid @gray-light;
-    padding: 33px 115px;
+    padding: 33px 60px;
     box-sizing: border-box;
     margin-bottom: 60px;
+    width: auto;
   }
 
   .form-app__title {
@@ -92,7 +99,7 @@
   }
 
   .form-app__list {
-    padding-left: 80px;
+    padding-left: 60px;
   }
 
   .form-app__title {
