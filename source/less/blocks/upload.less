@@ -12,7 +12,6 @@
 .upload__img {
   background-color: @gray;
   text-align: center;
-  padding-bottom: 10px;
 }
 
 .upload__photo {
@@ -96,6 +95,10 @@
   }
 }
 
+.upload__buttons-wrapper {
+  padding-bottom: 40px;
+}
+
 @media (min-width: @tablet-width) {
   .upload__slogan {
     padding-top: 55px;
@@ -114,6 +117,7 @@
   .upload__img {
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
   }
 
   .upload__range-wrapper {
@@ -164,7 +168,7 @@
 
   .upload__actions {
     padding-right: 12px;
-    padding-left: 30px;
+    padding-left: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -201,7 +205,8 @@
   }
 
   .upload__buttons-wrapper {
-    margin-top: 33px;
+    margin-top: 19px;
+    padding-bottom: 0;
   }
 }
 
@@ -216,7 +221,7 @@
   }
 
   .upload__img.container {
-    padding: 72px 84px 42px 56px;
+    padding: 57px 60px 57px 80px;
     box-sizing: border-box;
   }
 
@@ -261,12 +266,13 @@
   .upload__buttons-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     width: 410px;
-    margin-top: 80px;
+    margin-top: 89px;
   }
 
   .upload__buttons {
     width: 180px;
+    margin-bottom: 0;
   }
 }

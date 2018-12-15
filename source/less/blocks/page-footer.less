@@ -11,10 +11,27 @@
   border: 3px solid @gray-dark;
   margin-right: 12px;
   box-sizing: border-box;
+
+  &:hover {
+    border: 3px solid @black;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .social__link {
-  padding: 15px;
+  padding: 13px;
+  display: block;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: @red;
 }
 
 .page-footer {
@@ -34,8 +51,8 @@
 .page-footer.gallery {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 42px 40px 30px;
+  box-sizing: border-box;
 }
 
 .page-footer__copyright {
