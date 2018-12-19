@@ -8,16 +8,16 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="page-header page-header-main">
-  <div class="page-header__wrapper wrapper--opened">
+<header class="page-header page-header-main form--header">
+  <div class="page-header__wrapper wrapper--closed">
     <div class="page-header__top">
       <div class="page-header__logo-link">
         <a class="page-header__logo" href="index.html"></a>
     </div>
-    <nav class="main-nav main-nav--opened">
+    <nav class="main-nav main-nav--closed">
       <button type="button" class="main-nav__toggle" aria-label="Открыть меню"></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active">
+        <li class="main-nav__item  main-nav__item--active">
           <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
@@ -138,57 +138,84 @@
         </thead>
         <tbody class="subscription__table-body">
           <tr>
-            <td class="subscription__description">Розовый фильтр</td>
-            <td class="subscription__mark"><span class="visually-hidden">Включен</span>
-              <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
-              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-              </svg>
+            <td class="subscription__description">Розовый фильтр
+              <div class="subscription__mark"><span class="visually-hidden">Включен</span>
+              </div>
             </td>
-            <td class="subscription__mark"><span class="visually-hidden">Включен</span>
-              <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
-              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-              </svg>
+            <td class="subscription__description description--table">Розовый фильтр
+              <div class="subscription__mark"><span class="visually-hidden">Включен</span>
+                <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </div>
             </td>
-            <td class="subscription__mark"><span class="visually-hidden">Включен</span>
-              <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
-              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-              </svg>
+            <td class="subscription__description description--table">Розовый фильтр
+              <div class="subscription__mark"><span class="visually-hidden">Включен</span>
+                <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </div>
             </td>
-          </tr>
-          <tr>
-            <td class="subscription__description">Смайлики</td>
-            <td class="subscription__mark"><span class="visually-hidden">Выключен</span>
-              <svg class="subscription__icon icon--no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px">
-              <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-              </svg>
-            </td>
-            <td class="subscription__mark"><span class="visually-hidden">Включен</span>
-              <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
-              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-              </svg>
-            </td>
-            <td class="subscription__mark"><span class="visually-hidden">Включен</span>
-              <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
-              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-              </svg>
+            <td class="subscription__description description--table">Розовый фильтр
+              <div class="subscription__mark"><span class="visually-hidden">Включен</span>
+                <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </div>
             </td>
           </tr>
           <tr>
-            <td class="subscription__description">Комментарии</td>
-            <td class="subscription__mark"><span class="visually-hidden">Выключен</span>
-              <svg class="subscription__icon icon--no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px">
-              <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-              </svg>
+            <td class="subscription__description">Смайлики
+              <div class="subscription__mark"><span class="visually-hidden">Выключен</span>
+              </div>
             </td>
-            <td class="subscription__mark"><span class="visually-hidden">Выключен</span>
-              <svg class="subscription__icon icon--no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px">
-              <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-              </svg>
+            <td class="subscription__description description--table">Смайлики
+              <div class="subscription__mark"><span class="visually-hidden">Включен</span>
+                <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </div>
             </td>
-            <td class="subscription__mark"><span class="visually-hidden">Включен</span>
-              <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
-              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-              </svg>
+            <td class="subscription__description description--table">Смайлики
+              <div class="subscription__mark"><span class="visually-hidden">Включен</span>
+                <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </div>
+            </td>
+            <td class="subscription__description description--table">Смайлики
+              <div class="subscription__mark"><span class="visually-hidden">Включен</span>
+                <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="subscription__description">Комментарии
+              <div class="subscription__mark"><span class="visually-hidden">Выключен</span>
+              </div>
+            </td>
+            <td class="subscription__description description--table">Комментарии
+              <div class="subscription__mark"><span class="visually-hidden">Выключен</span>
+                <svg class="subscription__icon icon--no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px">
+                <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+              </div>
+            </td>
+            <td class="subscription__description description--table">Комментарии
+              <div class="subscription__mark"><span class="visually-hidden">Включен</span>
+                <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </div>
+            </td>
+            <td class="subscription__description description--table">Комментарии
+              <div class="subscription__mark"><span class="visually-hidden">Включен</span>
+                <svg class="subscription__icon icon--yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px">
+                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </div>
             </td>
           </tr>
         </tbody>

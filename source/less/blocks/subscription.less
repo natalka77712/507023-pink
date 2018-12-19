@@ -4,7 +4,10 @@
 }
 
 .subscription__table {
-  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 840px;
   background-color: @white;
   border: 2px solid @gray;
   border-collapse: collapse;
@@ -23,11 +26,25 @@
 }
 
 .subscription__item,
-.subscription__mark,
 .subscription__description {
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
   min-width: 277px;
+}
+
+.subscription__description {
+  position: relative;
+  padding: 15px 68px 15px 22px;
+  text-transform: uppercase;
+}
+
+.subscription__icon {
+  position: absolute;
+  display: block;
+  width: 31px;
+  height: 30px;
+  top: 13px;
+  right: 17px;
 }
 
 .icon--no {
@@ -41,7 +58,7 @@
   overflow: hidden;
 }
 
-.subscription__mark:nth-child(3) {
+.subscription__description:nth-child(3) {
   display: none;
 }
 
@@ -85,10 +102,6 @@
   text-transform: uppercase;
 }
 
-.subscription__table-body td {
-  padding: 13px;
-}
-
 .subscription__toggles {
   margin: 0;
   text-align: center;
@@ -105,14 +118,34 @@
     min-width: 152px;
   }
 
+  .subscription__description {
+    padding: 7px 16px 8px;
+  }
+
+  .subscription__table {
+    min-width: 640px;
+  }
+
+  .description--table {
+    text-indent: -9999px;
+  }
+
   .cell--empty {
     background: @gray;
     border: transparent;
     display: table-cell;
   }
 
+  .subscription__mark .subscription__icon:first-child {
+    display: none;
+  }
+
   .subscription__description:first-child {
     text-transform: capitalize;
+  }
+
+  .subscription__description:nth-child(3) {
+    display: table-cell;
   }
 
   .subscription__mark:nth-child(3) {
@@ -128,6 +161,10 @@
   .subscription__wrapper {
     padding-bottom: 100px;
     padding-top: 145px;
+  }
+
+  .subscription__table {
+    min-width: 940px;
   }
 
   .cell--blue {
