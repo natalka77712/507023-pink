@@ -1,7 +1,12 @@
+.reviews-wrapper {
+  width: 100%;
+  position: relative;
+}
+
 .reviews {
   background-color: @white;
   padding-top: 42px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 
 .reviews__quotes {
@@ -48,13 +53,25 @@
   user-select: none;
   box-sizing: content-box;
   margin-right: 16px;
-  background: #bec2c7;
+  background: @blue;
+  opacity: 0.3;
+  border: none;
+  outline: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .reviews__button.active,
 .slider__toggles.active {
   background-color: @white;
   border: 3px solid @black;
+  opacity: 1;
 }
 
 .reviews__toggles.buttons {
@@ -129,7 +146,6 @@
     position: relative;
     display: block;
     opacity: 0.3;
-    outline: none;
     border: none;
 
     &:hover {
@@ -148,8 +164,9 @@
     width: 22px;
     height: 41px;
     cursor: pointer;
-    border: 0;
     background-color: transparent;
+    outline: none;
+    border: 0;
   }
 
   .reviews__toggles.next {

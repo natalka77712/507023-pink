@@ -38,16 +38,19 @@
   border: 0;
 }
 
-.button--submit:hover {
+.button--submit:hover,
+.popup__button-close:hover {
   background-color: @dark-green;
 }
 
-.button--submit:active {
+.button--submit:active,
+.popup__button-close:active {
   background-color: @dark-green;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button--submit:disabled {
+.button--submit:disabled,
+.popup__button-close:disabled {
   background-color: @gray-light;
 }
 
@@ -71,7 +74,7 @@
 .button--active {
   border: 3px solid @red;
   color: @red;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   border-radius: 27px;
   margin-top: 20px;
 
@@ -101,4 +104,21 @@
     background-color: @dark-gray;
     border-color: transparent;
   }
+}
+
+.popup__button-close {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: @white;
+  padding: 17px 30px 16px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: @green;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  outline: none;
 }
