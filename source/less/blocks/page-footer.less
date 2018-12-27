@@ -1,10 +1,7 @@
 .social__list {
   .reset-list();
-  margin-bottom: 50px;
-}
-
-.page-footer__logo {
-  margin-bottom: 40px;
+  display: flex;
+  margin-bottom: 35px;
 }
 
 .social__item {
@@ -13,21 +10,134 @@
   border-radius: 50%;
   border: 3px solid @gray-dark;
   margin-right: 12px;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 3px solid @black;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .social__link {
-  padding: 15px;
+  padding: 13px;
+  display: block;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: @red;
+}
+
+.page-footer {
+  display: none;
+}
+
+.form .page-footer__logo--mobile {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.form .page-footer__logo--desktop {
+  display: none;
+}
+
+.page-footer.form,
+.page-footer.gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 42px 40px 30px;
+  box-sizing: border-box;
 }
 
 .page-footer__copyright {
-  font-size: 14px;
-  line-height: 30px;
-  color: @blue;
-  text-align: center;
-  padding-right: 14px;
   margin: 0;
 }
 
 .copyright__link {
-  margin-bottom: 40px;
+  margin-left: 15px;
+  fill: @red;
+
+  &:hover {
+    fill: @black;
+  }
+
+  &:active {
+    fill: @dark-gray;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 20px;
+  }
+
+  .page-footer.form,
+  .page-footer.gallery {
+    flex-direction: row;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 0;
+  }
+
+  .page-footer__logo--mobile {
+    display: block;
+  }
+
+  .page-footer__logo--desktop {
+    display: none;
+  }
+
+  .social__list {
+    margin-bottom: 0;
+  }
+
+  .page-footer__copyright {
+    font-size: 14px;
+    line-height: 18px;
+    color: @blue;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 70px 0;
+  }
+
+  .page-footer__logo--mobile {
+    display: none;
+  }
+
+  .page-footer__logo--desktop {
+    margin: 0;
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+  }
+
+  .form .page-footer__logo--mobile {
+    display: none;
+    margin-bottom: 35px;
+  }
+
+  .form .page-footer__logo--desktop {
+    display: block;
+  }
+
+  .page-footer__copyright {
+    font-size: 18px;
+  }
 }

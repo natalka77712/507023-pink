@@ -13,7 +13,6 @@
   vertical-align: middle;
   width: 280px;
   padding: 18px 0;
-  margin-top: 28px;
   border-radius: 26px;
   border-width: 3px;
   border-style: solid;
@@ -27,9 +26,9 @@
   display: inline-block;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700px;
+  font-weight: 700;
   color: @white;
-  padding: 25px 0;
+  padding: 16px 0;
   vertical-align: middle;
   text-transform: uppercase;
   background-color: @green;
@@ -39,19 +38,87 @@
   border: 0;
 }
 
-.button--active {
-  border: 3px solid @pink;
-  color: @pink;
-  margin-bottom: 12px;
+.button--submit:hover,
+.popup__button-close:hover {
+  background-color: @dark-green;
+}
+
+.button--submit:active,
+.popup__button-close:active {
+  background-color: @dark-green;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--submit:disabled,
+.popup__button-close:disabled {
+  background-color: @gray-light;
+}
+
+.upload__buttons {
+  display: block;
   width: 280px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font: inherit;
+  line-height: 18px;
+  padding: 19px 0;
+  background-color: @gray;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+}
+
+.button--active {
+  border: 3px solid @red;
+  color: @red;
+  margin-bottom: 24px;
   border-radius: 27px;
   margin-top: 20px;
+
+  &:hover {
+    color: @white;
+    background-color: @red;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @red;
+  }
 }
 
 .button--disabled {
-  color: @gray-dark;
-  border-color: @gray-dark;
-  margin-bottom: 41px;
-  width: 280px;
+  color: rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 27px;
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @dark-gray;
+    border-color: transparent;
+  }
+}
+
+.popup__button-close {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: @white;
+  padding: 17px 30px 16px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: @green;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  outline: none;
 }

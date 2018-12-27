@@ -6,23 +6,56 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  margin-bottom: 50px;
+  margin: 50px auto;
+  width: 250px;
+  outline: none;
 }
 
-.gallery__image,
 .gallery__panoram-card {
-  background-color: @gray;
-  margin: 0;
   margin-bottom: 20px;
 }
 
 .gallery__img--panoram {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery__img--panoram img {
   width: 320px;
+  height: 137px;
+  margin: 0 auto;
+  display: block;
+  background-color: transparent;
+}
+
+.gallery__mark {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @white;
+  background-color: @red;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px 20px;
+  border: 0;
+}
+
+.gallery__image {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .gallery__description {
-  background-color: @gray;
+  background-color: #f2f2f2;
   padding: 20px;
+  box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .gallery__name {
@@ -41,7 +74,76 @@
 }
 
 .gallery__like {
-  color: @pink;
+  color: @red;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .galery__intro {
+    font-size: 18px;
+    width: 500px;
+  }
+
+  .gallery__img--panoram img {
+    width: 660px;
+    height: 509px;
+  }
+
+  .gallery__mark {
+    top: 57px;
+    left: 65%;
+  }
+
+  .gallery__wrapper {
+    margin-left: auto;
+  }
+
+  .gallery__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .gallery__image {
+    flex-basis: 300px;
+  }
+
+  .gallery__image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .gallery__description--intro {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery__note--intro {
+    order: 4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__image {
+    margin-bottom: 54px;
+  }
+
+  .gallery__image img {
+    height: 400px;
+  }
+
+  .gallery__img--panoram img {
+    width: 1200px;
+    height: 509px;
+  }
+
+  .gallery__mark {
+    left: 78%;
+  }
 }

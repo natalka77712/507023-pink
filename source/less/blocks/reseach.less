@@ -1,0 +1,75 @@
+.reseach--info {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reseach--info {
+    display: block;
+    padding: 50px 0;
+  }
+
+  .reseach__item {
+    padding-left: 50%;
+    margin-bottom: 20px;
+  }
+
+  .research__title {
+    font-size: 30px;
+    line-height: 36px;
+    width: 170px;
+    margin-bottom: 20px;
+  }
+
+  .research__more {
+    color: @red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    background: @gray;
+  }
+
+  .reseach--info {
+    display: block;
+  }
+
+  .research__wrap {
+    display: flex;
+  }
+
+  .research__wrap::before {
+    width: 298px;
+    height: 345px;
+    margin-right: 70px;
+    display: block;
+    background: url("../img/icon-timer.svg") no-repeat;
+    content: "";
+  }
+
+  .reseach__item {
+    padding-left: 0;
+  }
+
+  .research__title {
+    margin: 0;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .research__information {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+    width: 530px;
+    margin-bottom: 38px;
+  }
+
+  .research__more {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
