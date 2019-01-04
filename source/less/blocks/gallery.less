@@ -15,12 +15,12 @@
   margin-bottom: 20px;
 }
 
-.gallery__img--panoram {
+.gallery__img-panoram {
   position: relative;
   overflow: hidden;
 }
 
-.gallery__img--panoram img {
+.gallery__img-panoram img {
   width: 320px;
   height: 137px;
   margin: 0 auto;
@@ -51,6 +51,10 @@
   margin-bottom: 20px;
 }
 
+.gallery__picture img {
+  display: block;
+}
+
 .gallery__description {
   background-color: #f2f2f2;
   padding: 20px;
@@ -73,11 +77,29 @@
   margin: 0;
 }
 
+.gallery__wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .gallery__like {
   color: @red;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 12px;
+  margin-left: 10px;
+  order: 2;
+}
+
+.gallery__like-icon {
+  width: 13px;
+  height: 12px;
+  background-color: transparent;
+  border: 0;
+  background-image: url("../img/icon-heart.svg");
+  outline: 0;
+  cursor: pointer;
+  order: 1;
 }
 
 @media (min-width: @tablet-width) {
@@ -86,18 +108,36 @@
     width: 500px;
   }
 
-  .gallery__img--panoram img {
+  .gallery__img-panoram img {
     width: 660px;
     height: 509px;
   }
 
   .gallery__mark {
     top: 57px;
-    left: 65%;
+    transform: translateX(150px);
   }
 
-  .gallery__wrapper {
+  .gallery__text {
+    flex-grow: 1;
+  }
+
+  .gallery__wrapper--intro {
     margin-left: auto;
+  }
+
+  .gallery__like {
+    order: 1;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .gallery__like--intro {
+    margin-right: 10px;
+  }
+
+  .gallery__like-icon {
+    order: 2;
   }
 
   .gallery__wrap {
@@ -127,6 +167,11 @@
   .gallery__note--intro {
     order: 4;
   }
+
+  .gallery__description--post {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -138,12 +183,12 @@
     height: 400px;
   }
 
-  .gallery__img--panoram img {
+  .gallery__img-panoram img {
     width: 1200px;
     height: 509px;
   }
 
   .gallery__mark {
-    left: 78%;
+    transform: translateX(310px);
   }
 }

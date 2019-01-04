@@ -24,7 +24,7 @@
   min-height: 65px;
 }
 
-.page-header__wrapper.wrapper--closed {
+.page-header__wrapper--closed {
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
   width: 100%;
@@ -32,11 +32,15 @@
 }
 
 .page-header__logo {
-  fill: @white;
+  outline: none;
   position: absolute;
-  left: 20px;
   top: 20px;
+  left: 20px;
+}
+
+.page-header__logo-icon {
   display: block;
+  fill: @white;
 
   &:hover {
     fill: @red;
@@ -53,14 +57,14 @@
   }
 }
 
-.form--header {
+.form-header {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center top;
   background-size: cover;
   min-height: 238px;
 }
 
-.page-header__wrapper.wrapper--opened {
+.page-header__wrapper--opened .page-header__top {
   background-color: @blue;
 }
 
@@ -68,16 +72,14 @@
   .page-header-main {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: auto;
-    min-height: 720px;
   }
 
   .page-main::before {
     position: absolute;
-    bottom: 0;
-    right: 0;
     width: 100%;
     height: 545px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: bottom;
     z-index: 1;
   }
 
@@ -86,30 +88,21 @@
   }
 
   .page-header__logo {
-    width: 148px;
-    height: 45px;
-    position: absolute;
-    display: block;
-    left: 20px;
     top: 25px;
+  }
+
+  .page-header__logo-icon {
+    &--mobile {
+      display: none;
+    }
 
     &--tablet {
       display: block;
     }
-
-    &:hover {
-      fill: @red;
-    }
-
-    &:active {
-      fill: @white;
-      opacity: 0.3;
   }
 
-    &--mobile,
-    &--desktop {
-      display: none;
-    }
+  .page-header__logo:hover .page-header__logo-letter {
+    fill: rgb(210, 40, 86);
   }
 
   .form--header {
@@ -129,11 +122,15 @@
     width: 100%;
     height: 645px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: 76px bottom;
+    background-position: 150px bottom;
   }
 
-  .page-header__wrapper.wrapper--opened {
+  .page-header__wrapper--opened.page-header__wrapper--opened {
     background: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header__wrapper--opened .page-header__top {
+    background-color: transparent;
   }
 
   .page-header__top {
@@ -141,7 +138,7 @@
     margin: 0 auto;
     display: flex;
     padding-top: 45px;
-    padding-bottom: 41px;
+    padding-bottom: 47px;
     position: relative;
   }
 
@@ -149,14 +146,14 @@
     min-height: auto;
   }
 
-  .page-header__logo--desktop {
-    display: block;
-    position: absolute;
-  }
+  .page-header__logo-icon {
+    &--tablet {
+      display: none;
+    }
 
-  .page-header__logo--mobile,
-  .page-header__logo--tablet {
-    display: none;
+    &--desktop {
+      display: block;
+    }
   }
 
   .page-header__toggle {

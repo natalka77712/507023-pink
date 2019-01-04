@@ -1,6 +1,6 @@
 .subscription__wrapper {
   background-color: @gray;
-  padding: 100px 0 45px;
+  padding: 63px 0 42px;
 }
 
 .subscription__table {
@@ -11,14 +11,14 @@
   background-color: @white;
   border: 2px solid @gray;
   border-collapse: collapse;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
-.cell--empty {
+.subscription__item--empty {
   display: none;
 }
 
-.cell--blue {
+.subscription__item--blue {
   background-color: @blue;
   border: none;
   padding: 20px;
@@ -32,11 +32,11 @@
 
 .subscription__description {
   position: relative;
-  padding: 15px 68px 15px 22px;
+  padding: 15px 68px 13px 22px;
   text-transform: uppercase;
 }
 
-.cell--active {
+.cell-active {
   position: relative;
   overflow: hidden;
 }
@@ -87,7 +87,7 @@
 }
 
 .subscription__mark {
-  right: 10%;
+  right: 6%;
   position: absolute;
   bottom: 30px;
 }
@@ -130,24 +130,29 @@
 }
 
 @media (min-width: @tablet-width) {
+  .subscription__wrapper {
+    padding: 35px 0 25px;
+  }
+
   .subscription__item {
-    padding: 10px 0 10px;
+    padding: 11px 0 8px;
     width: 25%;
   }
 
   .subscription__description {
-    padding: 7px 16px 8px;
+    padding: 7px 14px 4px;
   }
 
   .subscription__table {
     min-width: 620px;
+    margin-bottom: 45px;
   }
 
   .subscription__type {
     font-size: 0;
   }
 
-  .cell--empty {
+  .subscription__item--empty {
     background: @gray;
     border: transparent;
     display: table-cell;
@@ -194,20 +199,26 @@
 
 @media (min-width: @desktop-width) {
   .subscription__wrapper {
-    padding-bottom: 80px;
-    padding-top: 55px;
+    padding-bottom: 50px;
+    padding-top: 57px;
+  }
+
+  .subscription.container {
+    padding-left: 20px;
+    box-sizing: border-box;
+    padding-right: 0;
   }
 
   .subscription__table {
-    min-width: 940px;
+    width: 100%;
   }
 
-  .cell--blue {
-    padding: 18px;
+  .subscription__item--blue {
+    padding: 17px 20px 20px;
   }
 
   .subscription__description {
-    padding: 19px 20px 16px 17px;
+    padding: 13px 20px 11px;
     text-transform: capitalize;
     font-size: 18px;
   }
@@ -225,6 +236,7 @@
   }
 
   .subscription__mark {
-    bottom: 30px;
+    bottom: 28px;
+    left: 44%;
   }
 }

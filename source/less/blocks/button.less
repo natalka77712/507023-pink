@@ -8,21 +8,37 @@
   text-align: center;
 }
 
-.button--main {
+.download__button--main {
   display: inline-block;
   vertical-align: middle;
-  width: 280px;
-  padding: 18px 0;
-  border-radius: 26px;
-  border-width: 3px;
-  border-style: solid;
+  max-width: 280px;
+  padding: 15px 36px 16px;
+  border-radius: 23px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   border: 3px solid @white;
 }
 
-.button--submit {
+.download__button {
+  color: @white;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  margin: 0 auto 31px;
+}
+
+.download__button:hover {
+  color: @red;
+  background-color: @white;
+}
+
+.download__button:active {
+  color: rgba(210, 40, 86, 0.3);
+  background-color: @white;
+}
+
+.button-submit {
   display: inline-block;
   font-size: 18px;
   line-height: 30px;
@@ -38,18 +54,18 @@
   border: 0;
 }
 
-.button--submit:hover,
+.button-submit:hover,
 .popup__button-close:hover {
   background-color: @dark-green;
 }
 
-.button--submit:active,
+.button-submit:active,
 .popup__button-close:active {
   background-color: @dark-green;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button--submit:disabled,
+.button-submit:disabled,
 .popup__button-close:disabled {
   background-color: @gray-light;
 }
@@ -71,7 +87,7 @@
   outline: none;
 }
 
-.button--active {
+.upload__buttons--active {
   border: 3px solid @red;
   color: @red;
   margin-bottom: 24px;
@@ -89,7 +105,7 @@
   }
 }
 
-.button--disabled {
+.upload__buttons--disabled {
   color: rgba(40, 54, 69, 0.1);
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 27px;

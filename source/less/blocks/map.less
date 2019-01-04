@@ -6,14 +6,32 @@
   overflow: hidden;
 }
 
+.map::before {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  border-right: 50vw solid transparent;
+  border-top: 35px solid @white;
+  border-left: 50vw solid transparent;
+}
+
 @media (min-width: @tablet-width) {
   .map__frame {
     height: 375px;
+  }
+
+  .map::before {
+    border-top-width: 65px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map__frame {
-    height: 506px;
+    height: 485px;
+  }
+
+  .map::before {
+    border-top-width: 85px;
   }
 }
