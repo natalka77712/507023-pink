@@ -3,13 +3,72 @@
 .form-contacts,
 .form-app,
 .form-emotion {
-  .reset-form()
+  .reset-form();
 }
 
-.form__suggestion {
+.form__wrapper {
   font-size: 14px;
   line-height: 30px;
   color: @blue;
   text-align: center;
   margin-bottom: 49px;
+  margin-top: 50px;
+}
+
+.form__adittion {
+  display: none;
+}
+
+.form-feedback__input:hover,
+.form-app__label:hover::before,
+.form-contacts__input:hover,
+.form-achievement__label:hover::before {
+  border: 2px solid @black;
+}
+
+.form-feedback__input:active,
+.form-app__label:active::before,
+.form-contacts__input:active,
+.form-achievement__label:active::before {
+  border: 2px solid @red;
+}
+
+@media (min-width: @tablet-width) {
+  .form__wrapper {
+    font-size: 18px;
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    padding-top: 70px;
+  }
+
+  .form__body {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .form__suggestion {
+    margin: 0;
+  }
+
+  .form__adittion {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    width: 770px;
+  }
+
+  .form__body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 960px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
 }

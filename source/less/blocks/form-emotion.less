@@ -6,20 +6,21 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: @pink;
+  color: @red;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 10px;
 }
 
 .form-emotion__textarea {
-  width: 276px;
+  width: 100%;
+  box-sizing: border-box;
   color: @blue;
   padding: 20px;
   border: 2px solid @gray-light;
   margin-bottom: 48px;
   font: inherit;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
 }
 
@@ -29,12 +30,57 @@
   color: @blue;
   text-align: center;
   margin-top: 40px;
-  padding-left: 46px;
-  width: 100%;
   box-sizing: border-box;
   text-transform: uppercase;
 }
 
 .form-emotion__symbol {
   color: @pink;
+}
+
+.form-emotion__required.desktop {
+  display: none;
+}
+
+.form-emotion--button.container {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .form__block.form-emotion {
+    order: 4;
+    border: 2px solid @gray-light;
+    padding: 40px 58px 0 58px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+  }
+
+  .form-emotion--button.container {
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    padding: 0;
+    order: 5;
+  }
+
+  .form-emotion__required {
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  .form-emotion__title {
+    padding: 0;
+    padding-top: 10px;
+    min-width: 260px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-emotion__required {
+    display: none;
+  }
+
+  .form-emotion__required.desktop {
+    display: block;
+  }
 }
