@@ -56,8 +56,9 @@ gulp.task("server", function () {
     server: "build/"
   });
 
-gulp.watch("source/less/**/*.less", gulp.series("css"));
-gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+});
 
 gulp.task("refresh", function (done) {
   server.reload();
@@ -81,4 +82,3 @@ gulp.task("clean", function () {
 
 gulp.task("build", gulp.series("clean", "copy", "css"));
 gulp.task("start", gulp.series("build", "server"));
-});
